@@ -23,7 +23,7 @@ else if (operator === '/' || operator=== '' || operator === 'divided by'){
 }
 }
 
-console.log(calculate('6', '5', '+'));
+
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
