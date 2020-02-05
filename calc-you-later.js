@@ -51,9 +51,14 @@ const calculate = require('./calculate.js')
 
 // Use (well-named) variables to store the user inputs that are available in the process.argv array.
 
-const num1 = process.argv[2]
-const num2 = process.argv[4]
-const operator = process.argv[3]
+let num1 = process.argv[2]
+let num2 = process.argv[4]
+let operator = process.argv[3]
+if (process.argv[5] !== undefined){
+  num1 = process.argv[2]
+  num2 = process.argv[5]
+  operator = process.argv[3] + ' ' + process.argv[4]
+}
 
 /**************************************
  * STRETCH GOAL - TWO-WORD OPERATIONS *
